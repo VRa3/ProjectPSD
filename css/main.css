@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+.header__navbar {
+  background-color: #282828; }
+
+.navbar-light {
+  background-color: #282828;
+  color: #ffffff !important; }
+
+.nav-link {
+  font-size: 13px;
+  color: #ffffff !important; }
+
+.navbar-toggler {
+  background-color: #fff; }
+
+.navbar-collapse {
+  text-align: center; }
+
+.header__logo {
+  font-size: 40px;
+  color: white; }
+  .header__logo:hover {
+    color: white;
+    text-decoration: none; }
+
+.header__logo--my {
+  font-weight: 300; }
+
+.header__logo--way {
+  font-weight: 600; }
+
+.header__logo--dot {
+  color: #ff5800; }
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; } }
+
+.header__slider {
+  text-transform: uppercase;
+  font-family: 'Lato'; }
+
+.header__sliderHeading1 {
+  font-weight: 900; }
+
+.header__sliderHeading--dot {
+  color: #ff5800; }
+
+.header__sliderHeading--thin {
+  font-weight: 100; }
+
+.header__sliderHeading3--2ndPart {
+  font-weight: 700; }
+
+.header__sliderParagraph {
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: none; }
+
+@media (min-width: 992px) {
+  .header__slider {
+    margin-top: 50px;
+    min-height: 700px; }
+  .header__sliderHeading1 {
+    font-size: 82px; }
+  .header__sliderHeading2 {
+    font-size: 78px; }
+  .header__sliderImg {
+    position: absolute; } }
+
+.love__caption {
+  color: #000000;
+  margin-top: 90px; }
+
+.love__heading--bold {
+  color: #404040;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.love__heading--thin {
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.love__paragraph {
+  font-weight: 300;
+  color: #404040; }
+
+.love__boxes {
+  margin: 0;
+  margin-top: 90px; }
+
+.love__icons {
+  color: #000000;
+  margin-bottom: 50px; }
+
+.love__icon {
+  background-color: #ff5800;
+  width: 110px;
+  height: 155px;
+  float: left;
+  margin-right: 28px; }
+
+.love__iconImg {
+  width: 62px;
+  height: 62px; }
+
+.love__iconCaption {
+  height: 155px; }
+
+.love__iconHeading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.love__iconParagraph {
+  font-size: 14px; }
+
+body {
+  font-family: 'Lato';
+  color: #ffffff; }
+
+.header {
+  background-color: #282828;
+  height: 930px; }
+
+@media (min-width: 768px) {
+  .header {
+    max-height: 700px;
+    position: relative; } }
