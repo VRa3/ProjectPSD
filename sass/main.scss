@@ -1,1 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800|Open+Sans:400,600,700,800');
+
+@import "utilities/_variables.scss";
+@import "partials/_grid.scss"; 
+@import "partials/_header.scss";
+@import "partials/_hamburgerButton.scss";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Muli';
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

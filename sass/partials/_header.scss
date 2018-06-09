@@ -1,0 +1,140 @@
+.header{
+  background-image: url(/images/inne/materac.jpg);
+  background-size: cover;
+  background-position: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__filter{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header__menu{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.header__logo-wrapper{
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  background-color: $red;
+  position: relative;
+}
+
+.header__logo{
+  width: 80%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__list{
+  text-align: center;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+  background-color: $red;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.hide{
+  width: 0%;
+}
+
+.header__list-item{
+  padding: 5px 0;
+}
+
+.header__heading-wrapper{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 115px;
+  padding-bottom: 50px;
+}
+
+.header__heading, .header__heading-caption{
+  font-weight: 700;
+}
+
+.header__heading-caption{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .header{
+    height: 500px;
+  }
+  
+  .header__logo-wrapper{
+    width: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .header__logo{
+    width: 75%;
+  }
+  
+  .header__list{
+    width: auto;
+    position: static;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .header__list-item{
+    padding: 0 20px;
+  }
+  
+  .header__list-item--join{
+    margin-left: 25px;
+    background-color: $red;
+    padding: 15px 30px;
+  }
+  
+  .header__heading-wrapper{
+    text-align: right;
+    margin-right: 25px;
+  }
+  
+  .header__heading{
+    font-size: 45px;
+  }
+  
+  .header__heading-caption{
+    font-size: 18px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .header{
+    height: 800px;
+  }
+  
+  .header__heading-wrapper{
+    margin: 170px 0 0 0;
+  }
+  
+  .header__heading{
+    fonts-size: 55px;
+  }
+}
