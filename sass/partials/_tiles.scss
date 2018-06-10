@@ -37,3 +37,12 @@
     margin-left: 15px;
   }
 }
+
+@media (min-width: 768px) {
+  .tiles{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -15%;
+  }
+}
