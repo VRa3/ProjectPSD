@@ -260,6 +260,35 @@
   .specialization__matress-big-photo-wrapper {
     width: 100%; } }
 
+.tiles {
+  color: #fff; }
+  .tiles__tile {
+    background-size: cover; }
+    .tiles__tile--first {
+      background-image: url(../images/warehouse/magazyn_01.jpg); }
+    .tiles__tile--second {
+      background-image: url(../images/inne/truck.jpg); }
+    .tiles__tile--third {
+      background-image: url(../images/warehouse/magazyn_materacy_rotated.jpg); }
+  .tiles__tile-filter {
+    background-image: linear-gradient(#e10024 30%, rgba(200, 0, 0, 0.8));
+    padding: 25px; }
+    .tiles__tile-filter--dark {
+      background-image: linear-gradient(#ae001c, rgba(200, 0, 0, 0.8)); }
+    .tiles__tile-filter--navy {
+      background-image: linear-gradient(#04051a 30%, rgba(0, 0, 0, 0.9)); }
+  .tiles__date {
+    margin: 0; }
+  .tiles__button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -25px; }
+  .tiles__button {
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin-left: 15px; }
+
 body, html {
   margin: 0;
   padding: 0;

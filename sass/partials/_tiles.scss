@@ -1,0 +1,39 @@
+.tiles{
+  color: #fff;
+  &__tile{
+    background-size: cover;
+    &--first{
+      background-image: url(../images/warehouse/magazyn_01.jpg);
+    }
+    &--second{
+      background-image: url(../images/inne/truck.jpg);
+    }
+    &--third{
+      background-image: url(../images/warehouse/magazyn_materacy_rotated.jpg);
+    }
+  }
+  &__tile-filter{
+    background-image: linear-gradient($red 30%, rgba(200, 0, 0, 0.8));
+    padding: 25px;
+    &--dark{
+      background-image: linear-gradient(darken($red, 10%), rgba(200, 0, 0, 0.8))
+    }
+    &--navy{
+      background-image: linear-gradient($navy 30%, rgba(0,0,0,0.9))
+    }
+  }
+  &__date{
+    margin: 0;
+  }
+  &__button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -25px;
+  }
+  &__button{
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin-left: 15px;
+  }
+}
