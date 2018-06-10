@@ -22,9 +22,16 @@
 }
 
 .specialization__matress-type{
-  height: 60px;
   font-weight: 700;
   font-size: 13px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.specialization__matress-type-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .specialization__matress-type-heading, .specialization__matress-type-info{
@@ -36,7 +43,63 @@
 }
 
 .specialization__matress-type-img{
-  float: left;
   margin-right: 10px;
+  align-self: flex-start;
 }
 
+.specialization__matress-big-photo{
+  max-width: 100%;
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .specialization__information-wrapper{
+    width: 70%;
+  }
+  .specialization__matress-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  
+  .specialization__matress-types-wrapper{
+    width: 35%;
+  }
+  
+  .specialization__matress-big-photo-wrapper{
+    margin-left: 5%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .production__specialization-wrapper{
+    display: flex;
+  }
+  
+  .specialization__information-wrapper{
+    width: 40%;
+  }
+  
+  .specialization__matress-types-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .specialization__matress-type{
+    flex-basis: 215px;
+    margin-bottom: 25px;
+  }
+  
+  .specialization__matress-wrapper{
+    flex-direction: column;
+    margin-left: 5%;
+    width: 55%;
+  }
+  
+  .specialization__matress-big-photo-wrapper{
+    width: 100%;
+  }
+}
