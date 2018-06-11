@@ -1,7 +1,6 @@
 .work{
   color: #ffffff;
   &__filter{
-    position: absolute;
     margin-bottom: 50px;
   }
   &__decoration-box{
@@ -12,7 +11,7 @@
     &-filter{
       width: 30%;
       height: 60px;
-      background-image: url(/images/warehouse/materace_wyciety_kawalek.jpg);
+      background-image: url(../images/warehouse/materace_wyciety_kawalek.jpg);
       background-size: cover;
       background-position: right;
       position: absolute;
@@ -39,7 +38,7 @@
     }
   }
   &__offers{
-    background-image: url(/images/warehouse/magazyn_materacy.jpg);
+    background-image: url(../images/warehouse/magazyn_materacy.jpg);
     background-size: cover;
     background-position: right;
     &-filter{
@@ -78,6 +77,14 @@
 
 @media (min-width: 768px) {
   .work{
+    background-image: url(../images/warehouse/magazyn_materacy.jpg);
+    background-size: cover;
+    &__header{
+      margin-left: 25px;
+    }
+    &__filter{
+      background-color: rgba(0, 0, 20, 0.75);
+    }
     &__container{
       display: flex;
     }
@@ -85,7 +92,12 @@
       width: 50%;
     }
     &__offers{
+      background-image: none;
       width: 50%;
+      background-color: transparent;
+      &-filter{
+        background-color: transparent;
+      }
     }
     &__header{
       font-size: 14px;
@@ -95,6 +107,12 @@
     }
     &__description{
       font-size: 14px;
+      padding-left: 25px;
+    }
+    &__button{
+      &-arrow{
+        padding: 13px;        
+      }
     }
   }
 }
