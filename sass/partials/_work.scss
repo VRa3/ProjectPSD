@@ -1,7 +1,6 @@
 .work{
   color: #ffffff;
   &__filter{
-    margin-bottom: 50px;
     position: relative;
   }
   &__photograph{
@@ -60,7 +59,7 @@
   }
   &__button{
     background-color: transparent;
-    border: 2px solid $red;
+    border: 3px solid $red;
     height: 40px;
     width: 70%;
     color: #ffffff;
