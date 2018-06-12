@@ -232,7 +232,6 @@
 
 @media (min-width: 768px) {
   .production {
-    min-height: 600px;
     background-image: url(../images/warehouse/magazynowanie_materacy.jpg); }
     .production__filter {
       background-image: linear-gradient(to right, #ffffff 80%, rgba(218, 218, 218, 0.8)); }
@@ -336,7 +335,7 @@
       width: 60%;
       height: 105px;
       position: absolute;
-      background-image: url(/images/warehouse/materace_wyciety_kawalek.jpg);
+      background-image: url(../images/warehouse/materace_wyciety_kawalek.jpg);
       background-size: cover;
       background-position: center;
       bottom: 4px;
