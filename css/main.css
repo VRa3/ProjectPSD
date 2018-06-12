@@ -485,6 +485,29 @@
       color: #ffffff;
       margin-left: -4px; }
 
+.invitation__images {
+  padding: 0 15px;
+  padding-top: 25px;
+  position: relative;
+  background-image: linear-gradient(45deg, #f2f2f2, #ffffff); }
+  .invitation__images-matress {
+    max-width: 70%; }
+  .invitation__images-cart {
+    max-width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 65%; }
+
+@media (min-width: 992px) {
+  .invitation {
+    display: flex; }
+    .invitation__text, .invitation__images {
+      width: 50%; }
+    .invitation__images-filter {
+      height: 100%;
+      display: flex;
+      align-items: center; } }
+
 body, html {
   margin: 0;
   padding: 0;
