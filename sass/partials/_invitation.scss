@@ -27,6 +27,7 @@
       &-wrapper{
         display: flex;
         flex-wrap: wrap;
+        margin: 25px 0;
       }
     }
     &-type{
@@ -52,6 +53,7 @@
       font-weight: 900;
       &-wrapper{
         display: flex;
+        margin-bottom: 10px;
       }
       &-arrow{
         background-color: $red;
@@ -85,10 +87,29 @@
       width: 50%;
     }
     &__images{
-      &-filter{
-        height: 100%;
+        height: inherit;
         display: flex;
-        align-items: center;}
+        justify-content: center;
+      &-matress{
+        align-self: center;
+        max-width: 80%;
+        margin-left: -15%;
+      }
+      &-cart{
+        max-width: 30%;
+        top: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .invitation{
+    &__images{
+      &-cart{
+        top: 15%;
+        max-width: 40%;
+      }
     }
   }
 }

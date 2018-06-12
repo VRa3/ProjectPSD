@@ -457,7 +457,8 @@
       font-weight: 500; }
     .invitation__text-types-wrapper {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin: 25px 0; }
   .invitation__text-type {
     background-color: #f1f1f1;
     padding: 10px 15px;
@@ -478,7 +479,8 @@
     font-family: 'Muli';
     font-weight: 900; }
     .invitation__text-button-wrapper {
-      display: flex; }
+      display: flex;
+      margin-bottom: 10px; }
     .invitation__text-button-arrow {
       background-color: #e10024;
       padding: 12px 15px;
@@ -503,10 +505,22 @@
     display: flex; }
     .invitation__text, .invitation__images {
       width: 50%; }
-    .invitation__images-filter {
-      height: 100%;
+    .invitation__images {
+      height: inherit;
       display: flex;
-      align-items: center; } }
+      justify-content: center; }
+      .invitation__images-matress {
+        align-self: center;
+        max-width: 80%;
+        margin-left: -15%; }
+      .invitation__images-cart {
+        max-width: 30%;
+        top: 30%; } }
+
+@media (min-width: 1200px) {
+  .invitation__images-cart {
+    top: 15%;
+    max-width: 40%; } }
 
 body, html {
   margin: 0;
