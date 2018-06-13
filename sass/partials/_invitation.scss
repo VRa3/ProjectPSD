@@ -134,9 +134,29 @@
 @media (min-width: 1200px) {
   .invitation{
     &__images{
+      &-matress{
+        max-width: 80%;
+        margin-left: -20%;
+      }
+      &-cart{
+        top: 30%;
+        left: 60%;
+        max-width: 40%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .invitation{
+    &__images{
+      &-matress{
+        max-width: 100%;
+        margin-left: 0%;
+      }
       &-cart{
         top: 25%;
-        left: 80%;
+        left: 75%;
         max-width: 50%;
       }
     }

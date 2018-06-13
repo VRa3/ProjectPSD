@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800|Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Open+Sans:300,400,600,700,800');
 
 @import "utilities/_variables.scss";
 @import "partials/_grid.scss"; 
@@ -8,6 +8,8 @@
 @import "partials/_tiles.scss";
 @import "partials/_work.scss";
 @import "partials/_invitation.scss";
+@import "partials/_contact.scss";
+@import "partials/_footer.scss";
 
 body, html {
   margin: 0;

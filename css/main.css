@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800|Open+Sans:400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800|Open+Sans:300,400,600,700,800");
 .container {
   margin: 0 auto; }
 
@@ -542,10 +542,101 @@
         overflow: hidden; } }
 
 @media (min-width: 1200px) {
+  .invitation__images-matress {
+    max-width: 80%;
+    margin-left: -20%; }
+  .invitation__images-cart {
+    top: 30%;
+    left: 60%;
+    max-width: 40%; } }
+
+@media (min-width: 1600px) {
+  .invitation__images-matress {
+    max-width: 100%;
+    margin-left: 0%; }
   .invitation__images-cart {
     top: 25%;
-    left: 80%;
+    left: 75%;
     max-width: 50%; } }
+
+.contact__details {
+  padding: 25px 15px;
+  background: #04051a;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 13px; }
+  .contact__details-paragraph--red {
+    color: #e10024; }
+  .contact__details-icon {
+    width: 10px;
+    color: #e10024;
+    margin: 0px 15px 15px 0; }
+
+.contact__certificate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .contact__certificate-img {
+    max-width: 100%;
+    margin: 10px; }
+
+@media (min-width: 768px) {
+  .contact__container {
+    display: flex; }
+  .contact__details {
+    width: 50%; }
+  .contact__certificate {
+    width: 50%;
+    display: flex; }
+    .contact__certificate-img {
+      align-self: center; } }
+
+@media (min-width: 992px) {
+  .contact__details {
+    display: flex;
+    justify-content: space-between; }
+    .contact__details-paragraph {
+      margin: 0; }
+      .contact__details-paragraph--red {
+        margin-bottom: 10px; }
+    .contact__details-icon {
+      margin: 0 15px 0 0; }
+    .contact__details-phone {
+      margin-bottom: 10px; }
+  .contact__certificate {
+    justify-content: flex-start; } }
+
+@media (min-width: 1200px) {
+  .contact__details {
+    position: relative; }
+    .contact__details::before {
+      content: "";
+      display: inline;
+      height: 100%;
+      width: 1000px;
+      background: #04051a;
+      position: absolute;
+      top: 0;
+      left: -1000px; } }
+
+.footer {
+  height: 55px;
+  background: #e10024; }
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0px 15px; }
+  .footer__paragraph {
+    color: #ffffff;
+    margin: 0; }
+    .footer__paragraph-logo {
+      max-width: 10px; }
+
+@media (min-width: 1200px) {
+  .footer__container {
+    padding: 0; } }
 
 body, html {
   margin: 0;
