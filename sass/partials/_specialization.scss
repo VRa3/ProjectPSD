@@ -25,6 +25,11 @@
   font-family: 'Muli';
   font-weight: 700;
   color: lighten(black, 40%);
+  transition: 0.3s;
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 
 .specialization__matress-type{

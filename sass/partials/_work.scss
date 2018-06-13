@@ -65,13 +65,18 @@
     color: #ffffff;
     font-family: 'Muli';
     font-weight: 700;
+    cursor: pointer;
     &-wrapper{
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       margin: 25px 0;
+      transition: 0.3s;
       cursor: pointer;
+      &:hover{
+        transform: scale(1.05);
+      }
     }
     &-arrow{
       background-color: $red;

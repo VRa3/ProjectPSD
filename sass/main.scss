@@ -16,8 +16,14 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Muli';
+  height: 100%;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }

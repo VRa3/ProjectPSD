@@ -51,9 +51,14 @@
       height: 40px;
       font-family: 'Muli';
       font-weight: 900;
+      cursor: pointer;
       &-wrapper{
         display: flex;
         margin-bottom: 10px;
+        transition: 0.3s;
+        &:hover{
+          transform: scale(1.05);
+        }
       }
       &-arrow{
         background-color: $red;

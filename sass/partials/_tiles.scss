@@ -15,6 +15,10 @@
   &__tile-filter{
     background-image: linear-gradient($red 30%, rgba(200, 0, 0, 0.8));
     padding: 25px;
+    &:hover{
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.6);
+    }
     &--dark{
       background-image: linear-gradient(darken($red, 10%), rgba(200, 0, 0, 0.8))
     }
@@ -35,6 +39,11 @@
     width: 30px;
     align-self: center;
     margin-left: 15px;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 }
 
