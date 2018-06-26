@@ -2,29 +2,99 @@
   color: #fff;
   &__tile{
     background-size: cover;
+    position: relative;
     &--first{
       background-image: url(../images/warehouse/magazyn_01.jpg);
+    &::after{
+      content: "";
+      height: 100%;
+      width: 0px;
+      background: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: 0.5s ease-in;
+    }
+      &:hover{
+        &::after{
+          width: 100%;
+        }
+      }
+      &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient($red 30%, rgba(200, 0, 0, 0.8));
+        z-index: 0;
+      }
     }
     &--second{
       background-image: url(../images/inne/truck.jpg);
+      &::after{
+      content: "";
+      height: 100%;
+      width: 0px;
+      background: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: 0.5s ease-in;
+    }
+      &:hover{
+        &::after{
+          width: 100%;
+        }
+      }
+      &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(darken($red, 10%), rgba(200, 0, 0, 0.8));
+        z-index: 0;
+      }
     }
     &--third{
       background-image: url(../images/warehouse/magazyn_materacy_rotated.jpg);
+      &::after{
+      content: "";
+      height: 100%;
+      width: 0px;
+      background: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: 0.5s ease-in;
+    }
+      &:hover{
+        &::after{
+          width: 100%;
+        }
+      }
+      &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient($navy 30%, rgba(0,0,0,0.9));
+        z-index: 0;
+      }      
     }
   }
   &__tile-filter{
-    background-image: linear-gradient($red 30%, rgba(200, 0, 0, 0.8));
+    position: relative;
+    z-index: 2;
     padding: 25px;
-    &:hover{
-      cursor: pointer;
-      background: rgba(0, 0, 0, 0.6);
-    }
-    &--dark{
-      background-image: linear-gradient(darken($red, 10%), rgba(200, 0, 0, 0.8))
-    }
-    &--navy{
-      background-image: linear-gradient($navy 30%, rgba(0,0,0,0.9))
-    }
   }
   &__date{
     margin: 0;

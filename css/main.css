@@ -296,23 +296,81 @@
 .tiles {
   color: #fff; }
   .tiles__tile {
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
     .tiles__tile--first {
       background-image: url(../images/warehouse/magazyn_01.jpg); }
+      .tiles__tile--first::after {
+        content: "";
+        height: 100%;
+        width: 0px;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: 0.5s ease-in; }
+      .tiles__tile--first:hover::after {
+        width: 100%; }
+      .tiles__tile--first::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(#e10024 30%, rgba(200, 0, 0, 0.8));
+        z-index: 0; }
     .tiles__tile--second {
       background-image: url(../images/inne/truck.jpg); }
+      .tiles__tile--second::after {
+        content: "";
+        height: 100%;
+        width: 0px;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: 0.5s ease-in; }
+      .tiles__tile--second:hover::after {
+        width: 100%; }
+      .tiles__tile--second::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(#ae001c, rgba(200, 0, 0, 0.8));
+        z-index: 0; }
     .tiles__tile--third {
       background-image: url(../images/warehouse/magazyn_materacy_rotated.jpg); }
+      .tiles__tile--third::after {
+        content: "";
+        height: 100%;
+        width: 0px;
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: 0.5s ease-in; }
+      .tiles__tile--third:hover::after {
+        width: 100%; }
+      .tiles__tile--third::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(#04051a 30%, rgba(0, 0, 0, 0.9));
+        z-index: 0; }
   .tiles__tile-filter {
-    background-image: linear-gradient(#e10024 30%, rgba(200, 0, 0, 0.8));
+    position: relative;
+    z-index: 2;
     padding: 25px; }
-    .tiles__tile-filter:hover {
-      cursor: pointer;
-      background: rgba(0, 0, 0, 0.6); }
-    .tiles__tile-filter--dark {
-      background-image: linear-gradient(#ae001c, rgba(200, 0, 0, 0.8)); }
-    .tiles__tile-filter--navy {
-      background-image: linear-gradient(#04051a 30%, rgba(0, 0, 0, 0.9)); }
   .tiles__date {
     margin: 0; }
   .tiles__button-wrapper {
@@ -391,21 +449,26 @@
     color: #ffffff;
     font-family: 'Muli';
     font-weight: 700;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    text-align: left;
+    padding-left: 10px; }
     .work__button-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       margin: 25px 0;
-      transition: 0.3s;
-      cursor: pointer; }
-      .work__button-wrapper:hover {
-        transform: scale(1.05); }
+      transition: 0.3s; }
     .work__button-arrow {
       background-color: #e10024;
-      line-height: 40px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
       padding: 12px; }
+    .work__button:hover {
+      transform: scale(1.05); }
 
 @media (min-width: 768px) {
   .work {
@@ -441,9 +504,7 @@
       align-self: flex-end; }
     .work__button-wrapper {
       justify-content: flex-start;
-      margin-top: 8%; }
-    .work__button-arrow {
-      padding: 13px; } }
+      margin-top: 8%; } }
 
 @media (min-width: 1200px) {
   .work__offers-filter {
@@ -494,21 +555,24 @@
     background-color: transparent;
     border: 3px solid #e10024;
     padding: 10px;
+    padding-right: 40px;
     height: 40px;
     font-family: 'Muli';
     font-weight: 900;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative; }
     .invitation__text-button-wrapper {
       display: flex;
-      margin-bottom: 10px;
-      transition: 0.3s; }
-      .invitation__text-button-wrapper:hover {
-        transform: scale(1.05); }
+      margin-bottom: 10px; }
     .invitation__text-button-arrow {
       background-color: #e10024;
-      padding: 12px 15px;
-      color: #ffffff;
-      margin-left: -4px; }
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      padding: 12px; }
+    .invitation__text-button:hover {
+      transform: scale(1.05); }
 
 .invitation__images {
   padding: 0 15px;
